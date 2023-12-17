@@ -1,0 +1,123 @@
+/* Vos customisations des classes de Bootstrap */
+.navbar {
+    display: flex; /* Utiliser un modèle de boîte flexible pour aligner les éléments */
+    align-items: center; /* Aligner verticalement les éléments au centre */
+    justify-content: space-between; /* Espacement équitable des éléments horizontalement */
+    padding: 10px; /* Ajouter un peu d'espacement autour des éléments si nécessaire */
+  }
+  
+  .nav-link {
+    text-decoration: none; /* Supprimer la décoration de texte sur les liens */
+    color: white; /* Changer la couleur des liens (à personnaliser selon votre préférence) */
+  }
+  
+  #home {
+    text-align: center; /* Alignement du text */
+    background-size: 50% auto; /*taille du fond d'ecran*/
+    background-position: center; /*position du fond*/
+    background-repeat: no-repeat; /*Dire si l'image de fond doit etre répété ou non*/
+    position: relative; /*positionné un élément par raport a sa position d'origine*/
+    color: white; /* Assurez-vous que le texte est lisible sur l'image de fond */ /*couleur du texte*/
+    display: flex; /*active le modele de boite flexible*/
+  flex-direction: column; /* Place les éléments verticalement (en dessous les uns des autres) */
+  align-items: center; /* Centre horizontalement les éléments */
+  justify-content: flex-start; /* Centre verticalement les éléments a partir du haut */
+  min-height: 90vh; /* Définissez une hauteur minimale de 100% de la hauteur de la vue (viewport) */
+  }
+  
+  .img-fluid {
+    width: 100%; /*largeur*/
+    height: 80vh !important; /*hauteur/ /*!important : priorité sur un autre élément du même nom */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /*permet de définir la zone de superposition*/
+  }
+  
+  #home h1,
+  #home p,
+  #home .learn {
+    position: relative;
+    z-index: 2; /* Assurez-vous que le texte est au-dessus de l'image de fond */
+    margin-top: 20px; /* Espace entre le texte et le bouton */
+  }
+  .image-code {
+    position: absolute;
+    top: 50%; /* Ajustez ces valeurs pour contrôler la position de l'image de code */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre l'image de code par rapport à son conteneur */
+    z-index: 3; /* L'image code.png doit être au-dessus du texte */
+
+  }
+
+.learn{
+    background-color: #dc3545; /*couleur du fond*/
+    color:white;
+    border: #dc3545 solid 2px; /*couleur bordure style de bordure taille de la bordure*/
+    border-radius: 2px; /*mettre des bord arrondi*/
+}
+h2{
+    text-decoration: underline; /*mettre du texte souligner */
+    text-transform: uppercase; /* modifier forme du texte mettre en majuscule etc*/ 
+    text-align: center; 
+}
+
+#who{
+    text-align: center;
+    white-space: pre-line; /* indique la facon dont un text se coupe */
+    min-height: 50vh; /* Définissez une hauteur minimale de 100% de la hauteur de la vue (viewport) pour la section #who */
+}
+
+#get-involved{
+    background-color:#6c757d14;
+    text-align: center;
+    min-height: 50vh; /* Définissez une hauteur minimale de 100% de la hauteur de la vue (viewport) pour la section #who */
+}
+
+.utilisateur{
+    width: 30px;
+    height: 30px;
+}
+
+.crayon{
+    width: 30PX;
+    height: 30px;
+}
+
+.billet{
+    width: 30px;
+    height: 30px;
+}
+
+footer{
+    width: 100%;
+    background-color: #dc3535;
+    min-height: 30vh; /* Définissez une hauteur minimale de 100% de la hauteur de la vue (viewport) pour la section #who */
+}
+
+.rounded{
+    margin-left: 120PX; /* marge extérieur gauche */
+    margin-top: 110px; /*marge extérieur haute*/
+}
+
+.conteneur{
+    text-align: right; /*allignement du texte position */
+}
+.fleche{
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
